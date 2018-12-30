@@ -1,59 +1,66 @@
-@keyframes tada {
-  from {
-    transform: scale3d(1, 1, 1);
-  }
-
-  10%,
-  20% {
-    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
-  }
-
-  30%,
-  50%,
-  70%,
-  90% {
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-  }
-
-  40%,
-  60%,
-  80% {
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-  }
-
-  to {
-    transform: scale3d(1, 1, 1);
-  }
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
 }
 
-.home-bg {
+.home-block {
+  position: relative;
   background-image: url("assets/cm-bg.png");
   background-size: cover;
-  position: fixed;
-  height: 100%;
-  width: 100%;
+  overflow: auto;
+  width: 100vw;
+  height: 100vh;
+}
+
+.transition-block-1 {
+  position: relative;
+  background-image: linear-gradient(to top, #000000a9 12%, #000000a9 1%, transparent), url("assets/cm-bg.png");
+  background-size: cover;
+  overflow: auto;
+  width: 100vw;
+  height: 100vh;
+}
+
+.content-block-1 {
+  position: relative;
+  background-image: linear-gradient(to top, #000000a9 1%, #000000a9 1%), url("assets/cm-bg.png");
+  background-size: cover;
+  overflow: auto;
+  width: 100vw;
+  height: 100vh;
 }
 
 .title-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  display: block;
+  margin-top: 10%;
+  margin-left: 30%;
 }
 
-.tada {
-  animation-name: tada;
+.text-container {
+  margin-top: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 30px;
 }
 
-.carousel-container {
-  top: 50%;
+.szn1-carousel-container { 
+  margin-top: 10%;
+  margin-left: 0.75%;
+}
+
+.szn2-carousel-container { 
+  margin-top: 20%;
+  margin-left: 0.75%;
 }
 
 .cover {
   width: 270px;
   height: 270px; 
-  background: #313131;
+  background: #ffffff;
   border-radius: 30px;
   box-shadow: 10px 10px 5px grey;
 }
